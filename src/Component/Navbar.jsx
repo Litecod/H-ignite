@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { NavLink } from "react-router";
+import { CiMenuKebab } from "react-icons/ci";
 import logo from "../assets/image/hlogo.png";
 import NotLogOrSginIn from "./NotLogOrSignIn";
 
 const Navbar = () => {
+  const [active, setActive] = useState(true);
   const navs = [
     { id: 1, name: "Home", value: "hom", link: "/" },
     { id: 2, name: "Service", value: "service", link: "/service" },
@@ -15,10 +18,16 @@ const Navbar = () => {
     { id: 4, name: "Contact", value: "contact", link: "/contact" },
   ];
   return (
-    <nav className="flex items-center justify-between px-[2rem] py-[0.5rem] border-b-[#000000B2] border-b-[5px]">
-      <img className="w-[15rem]" src={logo} alt="" />
-      <div className="flex gap-[2rem] items-center">
-        <ul className="flex flex-col  md:flex-row gap-[5rem] text-[1.2rem]">
+    <nav className="flex items-center justify-between px-[2rem] md:px-[1rem] lg:px-[2rem] py-[0.5rem] bg-[#f1f1f1] shadow-lg shadow[#000000B2] overflow-x-hidden">
+      <img
+        className=" ml-[0rem] lg:ml-[4rem] w-[7rem] lg:w-[15rem]"
+        src={logo}
+        alt=""
+      />
+      <div className="flex gap-[2rem] items-center overflow-x-hidden">
+        <ul
+          className={`absolute md:relative  md:right-[0] shadow-lg shadow[#000] md:shadow-[transparent] rounded-lg flex flex-col w-[12rem] text-center top-[5rem] md:top-0 z-10 bg-[#3B73B5] md:bg-[transparent] md:w-auto md:flex-row md:gap-[2rem] lg:gap-[5rem] md:text-[1rem] lg:text-[1.2rem] ${!active ? "right-[1rem]" : "right-[-20rem]"}`}
+        >
           {navs.map((nav) => {
             return (
               <NavLink
@@ -26,8 +35,8 @@ const Navbar = () => {
                 to={nav.link}
                 className={({ isActive }) =>
                   !isActive
-                    ? "hover:text-[#3B73B5] no-underline"
-                    : "hover:text-[#3B73B5] after:content-[''] after:block after:rounded-md after:w-[100%] after:h-[5px] after:bg-[#3B73B5]"
+                    ? "hover:text-[#3B73B5] no-underline py-[2rem]"
+                    : "md:hover:text-[#3B73B5]  py-[2rem] bg-[#fff] md:bg-[transparent] text-[#000] md:text-[#000] md:after:content-[''] md:after:block md:after:rounded-md md:after:w-[100%] md:after:h-[5px] md:after:bg-[#3B73B5]"
                 }
               >
                 {nav.name}
@@ -36,6 +45,10 @@ const Navbar = () => {
           })}
         </ul>
         <NotLogOrSginIn />
+        <CiMenuKebab
+          className="text-[#3B73B5] text-[1.7rem] md:hidden"
+          onClick={() => setActive((prev) => !prev)}
+        />
       </div>
     </nav>
   );
