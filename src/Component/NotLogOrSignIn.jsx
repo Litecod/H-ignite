@@ -2,8 +2,8 @@ import { NavLink } from "react-router";
 
 const NotLogOrSignIn = () => {
   const navs = [
-    { id: 1, name: "Login", link: "/login" },
-    { id: 2, name: "Signin", link: "/signin" },
+    { id: 1, name: "Log In", link: "/login" },
+    { id: 2, name: "Sign Up", link: "/signin" },
   ];
   return (
     <ul className="flex gap-[1rem] lg:gap-[2rem] items-center text-[1.2rem]">
