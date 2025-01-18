@@ -18,7 +18,8 @@ const Navbar = () => {
     { id: 4, name: "Contact", value: "contact", link: "/contact" },
   ];
   return (
-    <nav className="flex items-center justify-between px-[0.5rem] md:px-[1rem] lg:px-[2rem] py-[0.5rem] bg-[#f1f1f1] shadow-lg shadow[#000000B2] overflow-x-hidden">
+    <div className="overflow-x-hidden">
+      <nav className="flex items-center justify-between px-[0.5rem] md:px-[1rem] lg:px-[2rem] py-[0.5rem] bg-[#f1f1f1] shadow-lg shadow[#000000B2] overflow-x-hidden">
       <img
         className=" ml-[0rem] lg:ml-[4rem] w-[7rem] lg:w-[15rem]"
         src={logo}
@@ -26,7 +27,7 @@ const Navbar = () => {
       />
       <div className="flex gap-[0.5rem] md:gap-[2rem] items-center overflow-x-hidden">
         <ul
-          className={`absolute md:relative duration-500 md:right-[0] shadow-lg shadow[#000] md:shadow-[transparent] rounded-lg flex flex-col w-[12rem] text-center top-[5rem] md:top-0 z-10 bg-[#3B73B5] md:bg-[transparent] md:w-auto md:flex-row md:gap-[2rem] lg:gap-[5rem] md:text-[1rem] lg:text-[1.2rem] ${!active ? "right-[1rem]" : "right-[-20rem]"}`}
+          className={`absolute md:relative duration-5000 md:right-[0] shadow-lg shadow[#000] md:shadow-[transparent] rounded-lg flex flex-col w-[12rem] text-center top-[5rem] md:top-0 z-10 bg-[#3B73B5] md:bg-[transparent] md:w-auto md:flex-row md:gap-[2rem] lg:gap-[5rem] md:text-[1rem] lg:text-[1.2rem] ${!active ? "left-[20rem]" : "left-[40rem] hidden overflow-x-hidden"}`}
         >
           {navs.map((nav) => {
             return (
@@ -52,6 +53,7 @@ const Navbar = () => {
         />
       </div>
     </nav>
+    </div>
   );
 };
 
