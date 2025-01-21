@@ -17,7 +17,7 @@ const Service = () => {
   ];
   return (
     <div className="mt-[5rem]">
-      <h1 className="text-center md:text-[2rem] text-[3rem] overflow-x-hidden text-[#3D73B3] font-bold">
+      <h1 className="text-center text-[2rem] md:text-[3rem] overflow-x-hidden text-[#3D73B3] font-bold">
         Our Service
       </h1>
       <div className="overflow-x-scroll md:overflow-x-hidden">

@@ -4,6 +4,7 @@ import Home from "./Pages/Home"
 import NotFound from "./Pages/NotFound"
 import LoginPage from "./Pages/LoginPage"
 import RegisterPage from "./Pages/RegisterPage"
+import Contact from "./Pages/Contact"
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signin" element={<RegisterPage />} />
+        <Route path="/contact" element={<Contact />} />
       </Route>
     )
   )

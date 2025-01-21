@@ -4,6 +4,7 @@ import HeroCon from "../Component/HeroCon";
 import Service from "../Component/Service";
 import ServiceCon from "../Component/ServiceCon";
 import Testimonial from "../Component/Testimonial";
+import Question from "../Component/Question";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Service />
       <ServiceCon />
       <Testimonial />
+      <Question />
     </>
   );
 };
