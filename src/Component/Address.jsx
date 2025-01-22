@@ -20,7 +20,7 @@ const Address = () => {
       <div className="w-[100%] md:w-[65%] xl:w-[50%] mt-[2rem] md:mt-[0]">
         <iframe
           width="100%"
-          height="450"
+          height="430"
           frameborder="0"
           scrolling="no"
           marginheight="0"
