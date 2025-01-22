@@ -17,18 +17,19 @@ const Address = () => {
           <FaLocationDot /> Veiw Map
         </button>
       </div>
-      <div className="w-[100%] md:w-[65%] xl:w-[50%] mt-[2rem] md:mt-[0]">
-        <iframe
-          width="100%"
-          height="430"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          src={"https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=277%20Bedford%20Ave,%20Brooklyn,%20NY%2011211,%20USA+(H%20Ignite)&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"}
-        >
-          <a href="https://www.gps.ie/">gps tracker sport</a>
-        </iframe>
+      <div className=" relative text-right w-[100%] md:w-[60%] h-[300px] sm:h-[430px] mt-[3rem] md:mt-0">
+        <div className="overflow-hidden bg-none w-[100%] h-[300px] sm:h-[430px]">
+          <iframe
+            className="h-[300px] sm:h-[430px]"
+            width="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=600&amp;height=430&amp;hl=en&amp;q=277 Bedford Ave, Brooklyn, NY 11211, USA&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+          <a href="https://embed-googlemap.com">embed google map</a>
+        </div>
       </div>
     </div>
   );

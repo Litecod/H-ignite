@@ -9,11 +9,11 @@ import investment from "../assets/image/service5.png";
 const Service = () => {
   const scroll = [
     { id: 1, src: money, name: "money transfer" },
-    { id: 2, src: bill, name: "money transfer" },
-    { id: 3, src: wallet, name: "money transfer" },
-    { id: 4, src: insurance, name: "money transfer" },
-    { id: 5, src: travel, name: "money transfer" },
-    { id: 6, src: investment, name: "money transfer" },
+    { id: 2, src: bill, name: "Recharge and bill payment" },
+    { id: 3, src: wallet, name: "Personal wallet" },
+    { id: 4, src: insurance, name: "Insurance" },
+    { id: 5, src: travel, name: "Travel booking" },
+    { id: 6, src: investment, name: "Investment & SIP" },
   ];
   return (
     <div className="mt-[5rem]">
@@ -21,7 +21,7 @@ const Service = () => {
         Our Service
       </h1>
       <div className="overflow-x-scroll md:overflow-x-hidden">
-        <div className="flex w-[80rem] md:w-full  flex-row px-[0.5rem] md:px-[3rem] gap-[1rem] md:gap-[0] md:justify-between mt-[3rem] text-center w-full">
+        <div className="flex w-[90rem] md:w-full  flex-row px-[0.5rem] md:px-[3rem] gap-[4rem] md:gap-[0] md:justify-between mt-[3rem] text-center w-full">
           {scroll.map((scrol) => {
             return (
               <div
@@ -29,7 +29,7 @@ const Service = () => {
                 className="flex flex-col gap-2 w-[20%] md:w-[auto] h-[auto] mx-auto"
               >
                 <img src={scrol.src} alt="image" className="w-full" />
-                <p className="font-semibold text-[1.5rem] md:text-[1rem]">
+                <p className="font-semibold text-[0.8rem] md:text-[1rem]">
                   {scrol.name}
                 </p>
               </div>

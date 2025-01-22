@@ -38,23 +38,24 @@ const SideBar = () => {
     },
   ];
   return (
-    <div className="fixed md:flex-col md:gap-[2rem]  md:pl-[6rem] md:pt-[3rem] bg-[#fff] overflow-y-scroll">
-      <ul className=" flex flex-row md:flex-col md:gap-[2rem]">
-        {navs.map((nav) => {
-          return (
-            <NavLink
-              className={"flex items-center gap-2 text-[1.5rem]"}
-              key={nav.id}
-              to={nav.to}
-            >
-              {nav.icon}
-              {nav.name}
-            </NavLink>
-          );
-        })}
-      </ul>
-      <img src={img} alt="" className="mt-[4rem]" />
-    </div>
+    // <div className="fixed md:flex-col md:gap-[2rem]  md:pl-[6rem] md:pt-[3rem] bg-[#fff] overflow-y-scroll">
+    //   <ul className=" flex flex-row md:flex-col md:gap-[2rem]">
+    //     {navs.map((nav) => {
+    //       return (
+    //         <NavLink
+    //           className={"flex items-center gap-2 text-[1.5rem]"}
+    //           key={nav.id}
+    //           to={nav.to}
+    //         >
+    //           {nav.icon}
+    //           {nav.name}
+    //         </NavLink>
+    //       );
+    //     })}
+    //   </ul>
+    //   <img src={img} alt="" className="mt-[4rem]" />
+    // </div>
+    <h1></h1>
   );
 };
 
