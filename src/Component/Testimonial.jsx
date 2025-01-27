@@ -15,7 +15,7 @@ const Testimonial = () => {
             <img
               src={imageOne}
               alt=""
-              className="w-[100%] border-[#000000B2] border-[2px]"
+              className="w-[100%] h-[13rem] object-cover border-[#000000B2] border-[2px]"
             />
             <div className=" border-[#000000B2] border-[2px] text-center px-[0.3rem]">
               <p className="font-bold">- Rahul S</p>
@@ -32,7 +32,7 @@ const Testimonial = () => {
             <img
               src={imageTwo}
               alt=""
-              className="w-[100%] border-[#000000B2] border-[2px]"
+              className="w-[100%] h-[13rem] object-cover border-[#000000B2] border-[2px]"
             />
             <div className=" border-[#000000B2] border-[2px] text-center px-[0.3rem]">
               <p className="font-bold">- Rahul S</p>

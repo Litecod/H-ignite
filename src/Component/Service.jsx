@@ -28,7 +28,7 @@ const Service = () => {
                 key={scrol.id}
                 className="flex flex-col gap-2 w-[20%] md:w-[auto] h-[auto] mx-auto"
               >
-                <img src={scrol.src} alt="image" className="w-full" />
+                <img src={scrol.src} alt="image" className="w-full md:w-[10rem]" />
                 <p className="font-semibold text-[0.8rem] md:text-[1rem]">
                   {scrol.name}
                 </p>

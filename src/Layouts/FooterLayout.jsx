@@ -1,14 +1,13 @@
 import Footer from "../Pages/FooterPage";
-import Navbar from "../Component/Navbar";
 import { Outlet } from "react-router";
 
-const MainLayout = () => {
+const FooterLayout = () => {
   return (
     <>
-      <Navbar />
       <Outlet />
+      <Footer />
     </>
   );
 };
 
-export default MainLayout;
+export default FooterLayout;
